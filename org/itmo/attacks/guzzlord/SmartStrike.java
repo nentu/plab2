@@ -4,7 +4,7 @@ import ru.ifmo.se.pokemon.*;
 
 public class SmartStrike extends PhysicalMove {
     public SmartStrike(){
-        super(Type.STEEL, 70, 100.0);
+        super(Type.STEEL, 70.0, 100.0);
     }
     public boolean checkAccuracy(Pokemon att, Pokemon def){
         return true;
