@@ -8,7 +8,6 @@ public class Rest extends StatusMove {
     }
     @Override
     public void applySelfEffects(Pokemon p){
-        super.applySelfEffects(p);
 
         p.restore();
         Effect ef = new Effect().condition(Status.SLEEP).attack(0.0).turns(2);

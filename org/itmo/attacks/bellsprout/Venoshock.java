@@ -19,4 +19,8 @@ public class Venoshock extends SpecialMove {
             return super.calcBaseDamage(att, def);
         }
     }
+    @Override
+    public String describe(){
+        return "бьёт веношоком";
+    }
 }
