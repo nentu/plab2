@@ -1,8 +1,6 @@
 package org.itmo;
 
-import org.itmo.pokemons.Cranidos;
-import org.itmo.pokemons.Guzzlord;
-import org.itmo.pokemons.Rampardos;
+import org.itmo.pokemons.*;
 import ru.ifmo.se.pokemon.*;
 
 public class Main {
@@ -11,9 +9,12 @@ public class Main {
 
 
         b.addAlly(new Guzzlord("Guzzlord1", 20));
-        b.addFoe(new Cranidos("Cranidos1", 33));
-        b.addFoe(new Rampardos("Rampardos1", 36));
-        var t = new Rampardos("sfd", 3);
+        b.addAlly(new Cranidos("Cranidos1", 33));
+        b.addAlly(new Rampardos("Rampardos1", 36));
+
+        b.addFoe(new Bellsprout("Bellsprout1", 2));
+        b.addFoe(new Weepinbell("Weepinbell1", 15));
+        b.addFoe(new Victreebel("Victreebel1", 44));
         b.go();
 
     }
