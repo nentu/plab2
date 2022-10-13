@@ -7,6 +7,7 @@ public class LeafBlade extends PhysicalMove{
 
     }
 
+    @Override
     public double calcCriticalHit(Pokemon var1, Pokemon var2) {
         if ((var1.getStat(Stat.SPEED) / 512.0) * 3 > Math.random()) {
             System.out.println("критический урон");
@@ -15,6 +16,7 @@ public class LeafBlade extends PhysicalMove{
             return 1.0;
         }
     }
+    @Override
     public String describe(){
         return "метает листья";
     }

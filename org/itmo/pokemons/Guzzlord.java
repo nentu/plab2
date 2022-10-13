@@ -12,7 +12,7 @@ public class Guzzlord extends Pokemon{
         //super.addMove(new SmartStrike());
         //super.addMove(new RazorLeaf());
 
-        setMove(new Rest());
+        setMove(new Rest(), new LeafBlade());
 
 
     }
