@@ -8,9 +8,6 @@ public class Guzzlord extends Pokemon{
         super.setType(Type.DARK, Type.DRAGON);
         super.setStats(223, 101, 53, 97, 53, 43);
 
-        //super.setMove(new LeafBlade());
-        //super.addMove(new SmartStrike());
-        //super.addMove(new RazorLeaf());
 
         setMove(new Rest(), new LeafBlade(), new SmartStrike(), new RazorLeaf());
 
