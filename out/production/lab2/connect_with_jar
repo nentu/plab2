@@ -1,0 +1,1 @@
+java -cp myJar.jar a.b.myMainClass
