@@ -8,9 +8,9 @@ public class PoisonPowder extends StatusMove {
     }
 
     @Override
-    public void applyOppEffects(Pokemon p){
-        super.applyOppEffects(p);
-        Effect.poison(p);
+    public void applyOppEffects(Pokemon pokemon){
+        super.applyOppEffects(pokemon);
+        Effect.poison(pokemon);
     }
 
     @Override

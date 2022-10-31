@@ -6,7 +6,7 @@ public class SmartStrike extends PhysicalMove {
     public SmartStrike(){
         super(Type.STEEL, 70.0, 100.0);
     }
-    public boolean checkAccuracy(Pokemon att, Pokemon def){
+    public boolean checkAccuracy(Pokemon attacker, Pokemon defender){
         return true;
     }
     public String describe(){

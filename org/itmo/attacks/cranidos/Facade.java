@@ -8,11 +8,11 @@ public class Facade extends PhysicalMove {
     }
 
     @Override
-    public void applySelfEffects(Pokemon p){
-        super.applySelfEffects(p);
+    public void applySelfEffects(Pokemon pokemon){
+        super.applySelfEffects(pokemon);
 
-        if (p.getCondition().equals(Status.BURN) | p.getCondition().equals(Status.POISON) | p.getCondition().equals(Status.PARALYZE)){
-            p.addEffect(new Effect().stat(Stat.ATTACK,(int) p.getStat(Stat.ATTACK)*2));
+        if (pokemon.getCondition().equals(Status.BURN) | pokemon.getCondition().equals(Status.POISON) | pokemon.getCondition().equals(Status.PARALYZE)){
+            pokemon.addEffect(new Effect().stat(Stat.ATTACK,(int) pokemon.getStat(Stat.ATTACK)*2));
 
         }
     }

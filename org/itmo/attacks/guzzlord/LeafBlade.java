@@ -8,9 +8,9 @@ public class LeafBlade extends PhysicalMove{
     }
 
     @Override
-    public double calcCriticalHit(Pokemon var1, Pokemon var2) {
-        if ((var1.getStat(Stat.SPEED) / 512.0) * 3 > Math.random()) {
-            System.out.println("критический урон");
+    public double calcCriticalHit(Pokemon pokemon1, Pokemon pokemon2) {
+        if ((pokemon1.getStat(Stat.SPEED) / 512.0) * 3 > Math.random()) {
+            System.out.println("Критический удар!");
             return 2.0;
         } else {
             return 1.0;

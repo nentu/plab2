@@ -8,8 +8,8 @@ public class RazorLeaf extends PhysicalMove {
     }
 
     @Override
-    public double calcCriticalHit(Pokemon var1, Pokemon var2) {
-        if (var1.getStat(Stat.SPEED)*3 / 512.0 > Math.random()) {
+    public double calcCriticalHit(Pokemon pokemon1, Pokemon pokemon2) {
+        if (pokemon1.getStat(Stat.SPEED)*3 / 512.0 > Math.random()) {
             return 2.0;
         } else {
             return 1.0;

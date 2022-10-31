@@ -7,15 +7,15 @@ public class Rest extends StatusMove {
         super(Type.PSYCHIC, 0.0, 1.0);
     }
     @Override
-    public void applySelfEffects(Pokemon p){
+    public void applySelfEffects(Pokemon pokemon){
 
-        p.restore();
-        Effect ef = new Effect().condition(Status.SLEEP).attack(0.0).turns(2);
-        p.addEffect(ef);
+        pokemon.restore();
+        Effect effect = new Effect().condition(Status.SLEEP).attack(0.0).turns(2);
+        pokemon.addEffect(effect);
     }
 
     @Override
-    public boolean checkAccuracy (Pokemon p1, Pokemon p2){
+    public boolean checkAccuracy (Pokemon pokemon1, Pokemon pokemon2){
         return true;
     }
 

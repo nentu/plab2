@@ -8,11 +8,11 @@ public class AncientPower extends SpecialMove {
     }
 
     @Override
-    public void applySelfEffects(Pokemon p){
-        super.applySelfEffects(p);
+    public void applySelfEffects(Pokemon pokemon){
+        super.applySelfEffects(pokemon);
 
         if (Math.random() < 0.1){
-            p.addEffect(new Effect().chance(1).stat(Stat.ATTACK, 1).stat(Stat.DEFENSE, 1).stat(Stat.SPECIAL_ATTACK, 1).stat(Stat.SPECIAL_DEFENSE, 1).stat(Stat.SPEED, 1));
+            pokemon.addEffect(new Effect().chance(1).stat(Stat.ATTACK, 1).stat(Stat.DEFENSE, 1).stat(Stat.SPECIAL_ATTACK, 1).stat(Stat.SPECIAL_DEFENSE, 1).stat(Stat.SPEED, 1));
         }
     }
     @Override

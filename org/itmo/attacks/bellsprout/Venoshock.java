@@ -11,12 +11,12 @@ public class Venoshock extends SpecialMove {
     }
 
     @Override
-    public double calcBaseDamage(Pokemon att, Pokemon def){
-        if (def.getCondition().equals(Status.POISON)){
-            return super.calcBaseDamage(att, def)*2;
+    public double calcBaseDamage(Pokemon attacker, Pokemon defender){
+        if (defender.getCondition().equals(Status.POISON)){
+            return super.calcBaseDamage(attacker, defender)*2;
         }
         else{
-            return super.calcBaseDamage(att, def);
+            return super.calcBaseDamage(attacker, defender);
         }
     }
     @Override

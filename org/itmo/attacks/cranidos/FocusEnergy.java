@@ -8,12 +8,12 @@ public class FocusEnergy extends StatusMove {
     }
 
     @Override
-    public void applySelfEffects(Pokemon p){
-        p.addEffect(new Effect().stat(Stat.SPEED, (int) p.getStat(Stat.SPEED)+20));
+    public void applySelfEffects(Pokemon pokemon){
+        pokemon.addEffect(new Effect().stat(Stat.SPEED, (int) pokemon.getStat(Stat.SPEED)+20));
 
     }
     @Override
-    public boolean checkAccuracy (Pokemon p1, Pokemon p2){
+    public boolean checkAccuracy (Pokemon pokemon1, Pokemon pokemon2){
         return true;
     }
 
